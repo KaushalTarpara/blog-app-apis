@@ -5,12 +5,14 @@ import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.config.ConfigDataResourceNotFoundException;
+import org.springframework.stereotype.Service;
+
 import com.codewithkd.blog.exceptions.ResourceNotFoundException;
 import com.codewithkd.blog.entities.User;
 import com.codewithkd.blog.payloads.UserDto;
 import com.codewithkd.blog.repositories.UserRepo;
 import com.codewithkd.blog.services.UserServices;
-
+@Service
 public class UserServiceImpl implements UserServices {
 
 	@Autowired
